@@ -1,0 +1,80 @@
+1) Browser displayes the following message when there is error in JS
+   Problem with the web page might prevent it from being displayed properly or functioning properly.
+   In the future, you can display this message by double-clicking the warrning icon displayed in the 
+   status bar
+   
+   Rule 1 :- Assume your code will fail
+   Always we should assume that user will give invalid data and write exections accordingly.
+   Eg:- object.extend = function (destination,source){
+          for (var property in source){
+		    destination[property]=source[property]
+			}
+		  return destination
+		  }
+		if destination or source is null it throws an error
+	
+	Rule 2 :- Log errors to the server.
+	Never return error information to the user in live production, it may leads to misuse of the application
+	Always log errors to server.
+	
+	Rule 3 :- You,not the browser, handle errors
+	Handle a error before it become browser error.
+	There will be an window.onerror in IE and firefox to handle errors before going to browser stage.
+	
+	Rule 4 :- Identify where errors might occur
+	1) Type coercion errors
+	   Type coercion means that when the operands of an operator are different types, 
+	   one of them will be converted to an "equivalent" value of the other operand's type
+	   Eg :- if we compare boolean===integer
+	2) Data type errors
+	   It often occurs with function arguments, Typically a symptom of insufficient value checking.
+    3) Communication errors
+	   Invalid URL/Post Data
+	   
+	   Typically long string concatenations
+	   Don't forget to user
+	   encode URIComponent() on each part - NotencodeURI()
+	   Make sure parameters are named correctly
+	   
+	   Server Response Status
+	   200 is the only valid status that may be returned
+	    - Beware of 304
+	   Any other status means you didn't get data
+	   
+	   No Network Connection
+	   Internet Explorer throws an error when calling open() but then goes through normal lifecycle
+	   Firefox fails silently but throws an error if you try to access any response property 
+	   
+	   Server Response Content
+	   A status of 200/304 is not enough
+	   Server errors often returm HTML
+	   If possible, set status to 500
+	   
+	Rule 5 :- Throw your own errors
+	Use throw keyword to raise your own described error rather than system throws error
+	Errors should be thrown in the low-level parts of the app.
+	- Utilities, Core libraries etc.,
+	Use try-catch blocks in higher level parts
+	-App-specific
+	-Client-side business logic
+	
+	Rule 6 :- Distinguish fatal VS non-fatal
+	
+	fatal errors
+	The application absolutely cannot continue
+	Significantly interfers with user's ability to be productive 
+	Other errors will occur if the application continues
+	Message the user immediately!
+    Reload	
+	
+	Rule 7 :- Provide a debug mode.
+	Assign a variable that is globally available
+	Try-catch should re-throw the error
+	window.onerror should return false
+	Allow the browser to handle the error.
+	   
+	   
+	   
+	   
+	   
+	

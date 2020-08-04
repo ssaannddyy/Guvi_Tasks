@@ -1,0 +1,78 @@
+1) Uncaught TypeError: Cannot read property
+   It is a very common error when working with object and array to get a 
+   TypeError: Cannot read property 'name' of undefined. This happens 
+   when we try to access a property of a value that is undefined or null 
+   in JavaScript.
+   Eg :- obj={}
+         console.log(obj.pro.pro)     
+		 //error will here
+
+2) TypeError :- undefined is not an object
+   This is an error that occurs when you read a property or call a method 
+   on an undefined object 
+   Note: We see this error in safari but not in chrome and geko, we see 
+   the cannot read property error in chrome and forefox.
+    Eg :- testarray=undefined
+          if(testarray.length===0){                 //error occur here
+            console.log("array is empty")
+           }
+
+3) TypeError :- null is not an object
+   This is an error that occurs when you read a property or call a method 
+   on a null object 
+   Note: We see this error in safari but not in chrome and geko, we see 
+   the cannot read property error in chrome and forefox.
+    Eg :- testarray=null
+          if(testarray.length===0){                  //error occur here
+            console.log("array is empty")
+           }
+
+4) ScriptError :- 
+    “Script error” is what browsers send to the onerror callback when an error 
+	originates from a JavaScript file served from a different origin (different domain, 
+	port, or protocol). It’s painful because even though there’s an error occurring, 
+	you don’t know what the error is, nor from which code it’s originating. 
+	
+5) TypeError :- Object dosen't support
+   This is an error that occurs in IE when you call an undefined method. 
+   Note :- In chrome and Firefox it shows as Uncaught TypeError: test_obj.isAwe is not a function
+   Eg :- test_obj={'a':1,'b':2}
+         test_obj.isAwe()
+		 
+6) TypeError :- undefined is not a function
+   This is an error that occurs in Chrome and Firefox when you call an undefined function.
+   Note :- It is the same error as Object dosen't support in IE
+   Eg :- test_obj={'a':1,'b':2}
+         test_obj.isAwe()
+7) Uncaught range error :-
+   This is an error that occurs under a couple of circumstances. 
+   One is when you call a recursive function that does not terminate
+   Another is if you pass a value to a function that is out of range.
+   Eg1 :-function fact()
+         {
+		   return n*fact(n-1)
+         }
+		 fact()
+   Eg2 :-num=1.25
+         num.toFixed(220)
+		 
+8) TypeError :- Cannot read property length
+   This is an error that occurs in Chrome & Firefox because of reading length property 
+   for an undefined or null variable.
+   Eg :- null.length
+ 
+9) Uncaught type error :- Cannot set property
+   When we try to access an undefined variable it always returns undefined and 
+   we cannot get or set any property of undefined. In that case, an application 
+   will throw this error.
+   Eg :-test = undefined
+        test.value="its me"
+
+10) ReferenceError:- event is not defined
+    This error is thrown when you try to access a variable that is undefined or 
+	is outside the current scope.
+	Eg :-function test()
+	     {
+		   var error
+		 }
+		 console.log(error)
