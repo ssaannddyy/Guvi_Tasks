@@ -1,0 +1,65 @@
+#main_div{
+	background-color: #e1e9ed;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: 'Cambria';
+	padding: 80px;
+	padding-top:30px;
+}
+p{
+	font-size: 20px;
+}
+.color{
+	background-color: #d1cfb8;
+	border-radius: 10px;
+}
+.top_broad_line{
+	background-color: #7a796e;
+}
+#photo{
+	height: 160px;
+	width: 160px;
+	border-radius: 220px;
+	position: absolute;
+    left: 580px;
+    top: 70px;
+    border: 5px dotted #e8cf15;
+}
+#details{
+	font-size: 25px;
+	color: #242526;
+}
+#name{
+	padding: 12px;
+	font-size:40px;
+	border-radius: 10px;
+	background-color: #e8cf15;
+	position: absolute;
+    left: 500px;
+    top: 185px;
+}
+.icon{
+	height: 30px;
+	width: 30px;
+	border: 3px dotted #e8cf15;
+	border-radius: 100px;
+}
+.color_inline{
+	display: inline;
+	background-color: #d1cfb8;
+	border-radius: 10px;
+}
+.right{
+	position: absolute;
+    top: 615px;
+    right: 150px;
+}
+.vl{
+	  border-left: 2px solid #a8a79b;
+      height: 700px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 600px;
+}

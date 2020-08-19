@@ -1,0 +1,42 @@
+div{
+	margin : 50px;
+	padding: 50px;
+	background-color: #7a6869;
+}
+.inline{
+	display: inline-block;
+}
+#img{
+	height: 150px;
+	width: 120px;
+	position: absolute;
+	top: 90px;
+	left: 450px;
+}
+.c_img{
+	height: 60px;
+	width: 90px;
+}
+#main{
+	font-size: 50px;
+	color: #910d14;
+}
+h2{
+	color: white;
+	font-size: 30px;
+}
+td{
+	height: 80px;
+	width: 350px;
+	text-align: center;
+	color:white;
+}
+p{
+	font-size: 20px
+}
+table{
+	border-collapse: collapse;
+}
+tr{
+	border-top: 30px solid #7a6869;
+}
