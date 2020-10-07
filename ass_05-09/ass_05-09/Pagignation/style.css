@@ -1,0 +1,133 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #3A1C71;  /* fallback for old browsers */
+}
+
+section{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+h1{
+  font-family: sans-serif;
+  color: white;
+  margin: 20px auto;
+  width: 400px;
+  margin-left: 40%;
+  font-size: 2rem;
+}
+table{
+  width: 100%;
+  margin: 10px 0 2px 6px;
+  table-layout: auto;
+  color: #757575;
+  text-align: center;
+  background-color: #ffff;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 5px 1px 29px 1px grey;
+}
+
+table tr{
+  border: 1px solid #757575;
+
+}
+
+table tr th, td{
+  padding: 10px 5px;
+}
+
+td:first-child{
+  width: 100px;
+}
+
+td input{
+  margin-left: 30px;
+}
+
+button{
+  padding: 8px 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  background: red;
+  color: white;
+  font-weight: bold;
+  display: none;
+
+}
+
+label{
+  cursor: pointer;
+
+}
+
+input{
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+
+thead{
+  background-color: grey;
+  color: white;
+  font-family: sans-serif;
+}
+
+ul{
+  color: white;
+  height: 50px;
+  padding: 0 5px;
+  width: auto;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li{
+
+  list-style: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+ul li:hover{
+  background-color: red;
+}
+
+td:nth-child(6)> input{
+  float: none;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+}
+select{
+  width: 126px;
+  padding: 6px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+}
+a:hover{
+  background-color: green;
+}
+
+.pagination-p{
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: white;
+  font-family: sans-serif;
+}

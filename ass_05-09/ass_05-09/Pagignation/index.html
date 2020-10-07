@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pagination Task</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <script type="text/javascript">
+
+    //-------------Table Section--------------------
+    var tableSection = document.createElement('section');
+    document.body.append(tableSection);
+
+    var h1Tab = document.createElement('h1');
+    h1Tab.innerHTML = "PAGINATION TASK"
+    tableSection.appendChild(h1Tab);
+
+    var tableMain = document.createElement('table');
+    tableSection.appendChild(tableMain);
+
+    var tHead  = document.createElement('thead');
+    tableMain.appendChild(tHead);
+
+    var tR = document.createElement('tr');
+    tHead.appendChild(tR);
+
+    var tH1 = document.createElement('th');
+    tR.appendChild(tH1);
+
+    var tH1Label = document.createElement('label');
+    tH1Label.setAttribute('for', 'SelectAll');
+    tH1Label.innerHTML = "Select All";
+    var tH1Input = document.createElement('input');
+    tH1Input.setAttribute('type', 'checkbox');
+    tH1Input.setAttribute('id', 'SelectAll');
+
+    tH1.appendChild(tH1Label);
+    tH1Label.appendChild(tH1Input);
+
+
+
+    var tH2 = document.createElement('th');
+    tH2.innerHTML = "ID";
+    tR.appendChild(tH2);
+
+    var tH3 = document.createElement('th');
+    tH3.innerHTML = "NAME";
+    tR.appendChild(tH3);
+
+    var tH4 = document.createElement('th');
+    tH4.innerHTML = "EMAIL";
+    tR.appendChild(tH4);
+
+    var tBody = document.createElement('tbody');
+    tBody.setAttribute('id', 'myTable')
+    tableMain.appendChild(tBody);
+
+    //--------------------Pagination------------------------
+    var pageSection = document.createElement('section');
+    document.body.append(pageSection);
+
+    var divPageSection = document.createElement('div');
+    pageSection.appendChild(divPageSection);
+
+    var pPageSection = document.createElement('p');
+    pPageSection.setAttribute('class', 'pagination-p');
+    pPageSection.innerHTML = "Select pages to show";
+
+    divPageSection.appendChild(pPageSection);
+
+    var selectPageSection = document.createElement('select');
+    divPageSection.appendChild(selectPageSection);
+
+    var option1 = document.createElement('option');
+    option1.setAttribute('value', '6');
+    option1.innerHTML = "6";
+    selectPageSection.appendChild(option1);
+
+    var option2 = document.createElement('option');
+    option2.setAttribute('value', '8');
+    option2.innerHTML = "8";
+    selectPageSection.appendChild(option2);
+
+    var option3 = document.createElement('option');
+    option3.setAttribute('value', '10');
+    option3.setAttribute('selected', 'true')
+    option3.innerHTML = "10";
+    selectPageSection.appendChild(option3);
+
+    var option4 = document.createElement('option');
+    option4.setAttribute('value', '12');
+    option4.innerHTML = "12";
+    selectPageSection.appendChild(option4);
+
+    var ulPage = document.createElement('ul');
+    ulPage.setAttribute('class', ' pagination');
+
+    pageSection.appendChild(ulPage);
+
+    var li1Page = document.createElement('li');
+    li1Page.setAttribute('class', 'prev');
+    ulPage.appendChild(li1Page);
+
+    var aLi1Page = document.createElement('a');
+    aLi1Page.setAttribute('href', '#');
+    aLi1Page.setAttribute('id', 'prev');
+    aLi1Page.innerHTML = "&#139;";
+    li1Page.appendChild(aLi1Page);
+
+    var li2Page = document.createElement('li');
+    li2Page.setAttribute('class', 'next');
+    ulPage.appendChild(li2Page);
+
+    var aLi2Page = document.createElement('a');
+    aLi2Page.setAttribute('href', '#');
+    aLi2Page.setAttribute('id', 'next');
+    aLi2Page.innerHTML = "&#155;";
+    li2Page.appendChild(aLi2Page);
+
+  </script>
+
+
+
+<!-- external script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
